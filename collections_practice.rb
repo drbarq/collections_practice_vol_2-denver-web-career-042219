@@ -202,7 +202,8 @@ end
 =end
 
 
-
+# this one was tough, I Really think that the stored value of the computer is tricking this one to work.  I think school_hash_two
+# is nested too deeply.  not due to .map or each, i think
 def organize_schools(schools)
   school_hash_two = Hash.new
   school_hash = Hash.new
@@ -217,11 +218,7 @@ def organize_schools(schools)
       school_hash_two = school_hash_two.merge(school_hash)
     end
   end
-  #  binding.pry
-  #puts school_hash_two
     school_hash_two
-
-#binding.pry
 end
 
 
